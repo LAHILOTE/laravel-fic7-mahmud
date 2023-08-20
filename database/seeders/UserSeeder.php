@@ -21,6 +21,8 @@ class UserSeeder extends Seeder
             'email_verified_at'=> now(),
             'role' => 'admin',
             'password'=> Hash::make('123456'),
+            'phone' => '085298167207',
+            'bio' => 'Flutter Dev'
         ]);
         User::create([
             'name'=>'Super Admin',
@@ -28,6 +30,8 @@ class UserSeeder extends Seeder
             'email_verified_at'=> now(),
             'role' => 'superadmin',
             'password'=> Hash::make('123456'),
+            'phone' => '085298161201',
+            'bio' => 'Laravel Dev'
         ]);
     }
 }
