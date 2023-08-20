@@ -7,6 +7,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-<p align="center" size=80px>
-   <h1> FIC Batch 7 </h1>
+<p align="center">
+#FIC Batch 7 
 </p>
