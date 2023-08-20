@@ -8,5 +8,5 @@
 </p>
 
 <p align="center">
-#FIC Batch 7 
+FIC Batch 7 
 </p>
