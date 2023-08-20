@@ -29,6 +29,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             ],
 
             'phone' => ['nullable', 'numeric', 'digits_between:10,12'],
+
         ])->validateWithBag('updateProfileInformation');
 
         if ($input['email'] !== $user->email &&
