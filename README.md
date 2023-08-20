@@ -8,5 +8,5 @@
 </p>
 
 <p align="center" size=80px>
-   # FIC Batch 7
+   <h1> FIC Batch 7 </h1>
 </p>
