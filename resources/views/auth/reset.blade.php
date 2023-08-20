@@ -21,7 +21,7 @@
                     <label for="email">Email</label>
                     <input id="email" type="email" class="form-control @error('email')
                         is-invalid
-                    @enderror" name="email" tabindex="1" value="{{ $request->email, 'readonly' }}" readonly disabled>
+                    @enderror" style="pointer-events: none;" name="email" value="{{ $request->email }}" readonly>
                     @error('email')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -34,7 +34,7 @@
                     <input id="password" type="password" class="form-control pwstrength @error('password')
                         is-invalid
                     @enderror" data-indicator="pwindicator"
-                        name="password" tabindex="2">
+                        name="password" tabindex="1">
                         @error('password')
                         <div class="invalid-feedback">
                             {{ $message }}
