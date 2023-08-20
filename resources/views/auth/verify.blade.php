@@ -13,7 +13,7 @@
             <h4>Please check your email for verification</h4>
         </div>
         @if (session('status') == 'verification-link-sent')
-            <div class="mb-4 font-medium text-sm text-green-600">
+            <div class="mb-4 font-medium text-sm text-green-600" style="text-align: center">
                 A new email verification link has been emailed to you!
             </div>
         @endif
