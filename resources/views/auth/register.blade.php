@@ -18,11 +18,11 @@
                 @csrf
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input id="name" type="text"
+                    <input id="name" type="text" value="{{ $request->old('name', $request->name) }}"
                         class="form-control @error('name')
                         is-invalid
                     @enderror"
-                        name="name" autofocus>
+                        name="name">
                     @error('name')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -32,7 +32,7 @@
 
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" type="email"
+                    <input id="email" type="email" value="{{ old('email') ?? $user->email ?? 'default' }}"
                         class="form-control @error('email')
                         is-invalid
                     @enderror"
