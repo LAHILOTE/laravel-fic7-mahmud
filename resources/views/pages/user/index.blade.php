@@ -26,9 +26,9 @@
                             </div>
                             <div class="card-body">
                                 <div class="float-right">
-                                    <form>
+                                    <form method="GET">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Search">
+                                            <input type="text" name="search" class="form-control" placeholder="Search">
                                             <div class="input-group-append">
                                                 <button class="btn btn-primary"><i class="fas fa-search"></i></button>
                                             </div>
@@ -79,7 +79,7 @@
                                 <div class="float-right">
                                     <nav>
                                         <ul class="pagination">
-                                            {{ $users->links() }}
+                                            {{ $users->withQueryString()->links() }}
                                         </ul>
                                     </nav>
                                 </div>
