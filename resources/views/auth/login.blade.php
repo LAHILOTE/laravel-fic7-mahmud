@@ -8,15 +8,15 @@
 @endpush
 
 @section('main')
-    <div class="card card-primary">
+    <div class="card card-success">
         <div class="card-header">
-            <h4>Login</h4>
+            <h4 class="text-success">Login</h4>
         </div>
 
         <div class="card-body">
             <form method="POST" action="{{ route('login') }}" class="needs-validation" novalidate="">
                 @csrf
-                <div class="form-group">
+                <div class="form-group ">
                     <label for="email">Email</label>
                     <input id="email" type="email"
                         class="form-control @error('email')
@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                    <button type="submit" class="btn btn-success btn-lg btn-block" tabindex="4">
                         Login
                     </button>
                 </div>
@@ -61,7 +61,7 @@
         </div>
     </div>
     <div class="text-muted mt-5 text-center">
-        Don't have an account? <a href="{{ route('register') }}">Create One</a>
+        Don't have an account? <a href="{{ route('register') }}"><span class="text-success">Create One</span></a>
     </div>
 @endsection
 
